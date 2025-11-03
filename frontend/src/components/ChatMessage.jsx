@@ -43,7 +43,7 @@ const ChatMessage = ({ type, content, isTyping = false, timestamp }) => {
             <span className="typing-dot"></span>
           </div>
         ) : (
-          <ReactMarkdown className="markdown-content">
+          <ReactMarkdown components={{ wrapper: ({ children }) => <div className="markdown-content">{children}</div> }}>
             {content}
           </ReactMarkdown>
         )}

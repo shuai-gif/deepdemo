@@ -13,8 +13,8 @@ module.exports = {
   
   // 服务器配置
   server: {
-    port: process.env.PORT || 3000,
-    host: process.env.HOST || '0.0.0.0'
+    port: 3000,
+    host: '0.0.0.0'
   },
   
   // 安全配置
